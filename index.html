@@ -1,14 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official support page for ManagerOS - AI Project Manager">
-  <title>ManagerOS Support</title>
+  <meta name="description" content="Official support and learning centre for ManagerOS - AI Project Manager">
+  <title>ManagerOS Support &amp; Learning Centre</title>
 
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -92,11 +97,53 @@
       margin-top: 15px;
     }
 
+    .learning-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .learning-nav a {
+      display: inline-block;
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: white;
+      color: #17365f;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .learning-nav a:focus-visible {
+      outline: 3px solid #2563eb;
+      outline-offset: 3px;
+    }
+
+    .learning-nav a:hover {
+      background: #eaf1ff;
+      text-decoration: none;
+    }
+
     footer {
       text-align: center;
       color: #667085;
       font-size: 14px;
       padding-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 29px;
+      }
+
+      .header {
+        padding: 40px 18px;
+      }
+
+      .card {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -104,11 +151,19 @@
 <body>
 
   <header class="header">
-    <h1>ManagerOS Support</h1>
-    <p>Support for ManagerOS - AI Project Manager</p>
+    <h1>ManagerOS Support &amp; Learning Centre</h1>
+    <p>Learn, manage, and lead with confidence.</p>
   </header>
 
   <main class="container">
+
+    <nav class="learning-nav" aria-label="Learning Centre">
+      <a href="#getting-started">Getting Started</a>
+      <a href="#user-guide">User Guide</a>
+      <a href="#ai-academy">AI Manager Academy</a>
+      <a href="#video-tutorials">Video Tutorials</a>
+      <a href="#help-support">Help &amp; Support</a>
+    </nav>
 
     <section class="card">
       <h2>Welcome to ManagerOS Support</h2>
@@ -126,7 +181,7 @@
       </p>
     </section>
 
-    <section class="card">
+    <section class="card" id="getting-started">
       <h2>Getting Started</h2>
 
       <h3>Create and Manage Projects</h3>
@@ -150,6 +205,90 @@
         support your judgment and decision-making and should be reviewed
         before acting on important recommendations.
       </p>
+    </section>
+
+    <section class="card" id="user-guide">
+      <h2>ManagerOS User Guide</h2>
+
+      <p>
+        Learn how to navigate ManagerOS and use its project
+        management features.
+      </p>
+
+      <h3>Main Navigation</h3>
+      <p>
+        Home, Projects, Calendar, Tips, and Settings.
+      </p>
+
+      <h3>Project Management</h3>
+      <p>
+        Explore Overview, Tasks, Milestones, Risks, SWOT,
+        Reports, and More.
+      </p>
+
+      <h3>Additional Project Tools</h3>
+      <p>
+        The More section includes Board, ROAM Board, Notes,
+        Files, Decisions, Meetings, Logs, and Activity.
+      </p>
+
+      <div class="note">
+        Detailed step-by-step guides with actual ManagerOS
+        screenshots will be added progressively.
+      </div>
+    </section>
+
+    <section class="card" id="ai-academy">
+      <h2>AI Manager Academy</h2>
+
+      <p>
+        Learn how AI Manager can support planning, leadership,
+        analysis, communication, and management decisions.
+      </p>
+
+      <h3>Plan &amp; Prioritize</h3>
+      <p>
+        Explore planning, priorities, and project organization.
+      </p>
+
+      <h3>Lead People</h3>
+      <p>
+        Explore delegation, feedback, and people-management guidance.
+      </p>
+
+      <h3>Analyze &amp; Decide</h3>
+      <p>
+        Explore risks, strategic analysis, and decision support.
+      </p>
+
+      <h3>Communicate &amp; Deliver</h3>
+      <p>
+        Explore management communication and project delivery.
+      </p>
+
+      <div class="note">
+        Practical examples and guided AI Manager lessons
+        will be added progressively. AI recommendations
+        should be reviewed before important decisions.
+      </div>
+    </section>
+
+    <section class="card" id="video-tutorials">
+      <h2>Video Tutorials</h2>
+
+      <p>
+        This section will provide short demonstrations
+        showing how to use ManagerOS features.
+      </p>
+
+      <p>
+        Tutorials will use actual ManagerOS application
+        screens and practical project-management examples.
+      </p>
+
+      <div class="note">
+        Video tutorials are coming soon.
+      </div>
     </section>
 
     <section class="card">
@@ -182,7 +321,7 @@
       </p>
     </section>
 
-    <section class="card">
+    <section class="card" id="help-support">
       <h2>Troubleshooting</h2>
 
       <h3>AI Manager is unavailable</h3>
@@ -262,6 +401,8 @@
     </footer>
 
   </main>
-
 </body>
 </html>
+
+
+  
