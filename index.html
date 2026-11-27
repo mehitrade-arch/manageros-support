@@ -125,6 +125,111 @@
       text-decoration: none;
     }
 
+    /* Phase 2 - Video Learning Centre */
+
+    .video-intro {
+      background: #0b1b35;
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 20px 0 25px;
+    }
+
+    .video-intro h3 {
+      color: white;
+      margin: 0 0 8px;
+      font-size: 23px;
+    }
+
+    .video-intro p {
+      color: #d6e4ff;
+      margin: 8px 0;
+    }
+
+    .playlist-button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 12px;
+    }
+
+    .playlist-button:hover {
+      background: #1d4ed8;
+      text-decoration: none;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .video-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-frame {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #0b1b35;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-content {
+      padding: 17px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tutorial-number {
+      color: #2563eb;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .video-content h3 {
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 8px 0;
+    }
+
+    .video-content p {
+      font-size: 14px;
+      color: #475569;
+      margin: 0 0 15px;
+    }
+
+    .video-link {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: auto;
+    }
+
+    .video-tagline {
+      text-align: center;
+      color: #17365f;
+      font-weight: 600;
+      margin-top: 25px;
+    }
+
     footer {
       text-align: center;
       color: #667085;
@@ -143,6 +248,19 @@
 
       .card {
         padding: 20px;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .video-intro {
+        padding: 20px;
+      }
+
+      .playlist-button {
+        text-align: center;
+        width: 100%;
       }
     }
   </style>
@@ -274,21 +392,284 @@
     </section>
 
     <section class="card" id="video-tutorials">
-      <h2>Video Tutorials</h2>
+
+      <h2>Video Learning Centre</h2>
 
       <p>
-        This section will provide short demonstrations
-        showing how to use ManagerOS features.
+        Learn ManagerOS at your own pace with eight step-by-step
+        video tutorials featuring actual application screens
+        and practical project-management examples.
       </p>
 
-      <p>
-        Tutorials will use actual ManagerOS application
-        screens and practical project-management examples.
-      </p>
+      <div class="video-intro">
+        <h3>ManagerOS Tutorials | Complete User Guide</h3>
+
+        <p>
+          8 video tutorials &bull; Free to watch &bull; Learn at your own pace
+        </p>
+
+        <p>
+          Start with creating your first project and progress
+          through the core ManagerOS features.
+        </p>
+
+        <a class="playlist-button"
+           href="https://youtube.com/playlist?list=PLNhjtX33Ztnk"
+           target="_blank"
+           rel="noopener noreferrer">
+          &#9654; Watch Complete Playlist
+        </a>
+      </div>
+
+      <div class="video-grid">
+
+        <!-- Tutorial 01 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/B67MEvAqB5Y"
+              title="ManagerOS Tutorial 01 - Create a New Project"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 01</span>
+            <h3>Create a New Project</h3>
+            <p>
+              Learn how to create your first project and organize
+              essential project information in ManagerOS.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/B67MEvAqB5Y"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Tutorial 02 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/PSBein7VWOc"
+              title="ManagerOS Tutorial 02 - Add and Manage Tasks"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 02</span>
+            <h3>Add and Manage Tasks</h3>
+            <p>
+              Create tasks, organize priorities, manage deadlines,
+              and track project activities.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/PSBein7VWOc"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Tutorial 03 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/3kEDSsyqXUY"
+              title="ManagerOS Tutorial 03 - Add and Manage Milestones"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 03</span>
+            <h3>Add and Manage Milestones</h3>
+            <p>
+              Set important project milestones and monitor
+              progress toward key objectives.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/3kEDSsyqXUY"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Tutorial 04 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/Y1aco0oxv-M"
+              title="ManagerOS Tutorial 04 - Add and Manage Risks"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 04</span>
+            <h3>Add and Manage Risks</h3>
+            <p>
+              Identify project risks, assess their impact,
+              and organize risk-management information.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/Y1aco0oxv-M"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Tutorial 05 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/A5c0Xx9BK6o"
+              title="ManagerOS Tutorial 05 - Add and Manage Meetings"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 05</span>
+            <h3>Add and Manage Meetings</h3>
+            <p>
+              Organize project meetings, record meeting information,
+              and manage reminders.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/A5c0Xx9BK6o"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Tutorial 06 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/mZB3PkvElGY"
+              title="ManagerOS Tutorial 06 - Create a SWOT Analysis"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 06</span>
+            <h3>Create a SWOT Analysis</h3>
+            <p>
+              Explore strengths, weaknesses, opportunities,
+              and threats to support strategic planning.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/mZB3PkvElGY"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Tutorial 07 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/rEsp43fN9nc"
+              title="ManagerOS Tutorial 07 - Create and Share Reports"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 07</span>
+            <h3>Create and Share Reports</h3>
+            <p>
+              Generate project reports, export supported information
+              as PDF, and share reports using your device.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/rEsp43fN9nc"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Tutorial 08 -->
+
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/KjoxUXlUKpk"
+              title="ManagerOS Tutorial 08 - AI Manager"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-content">
+            <span class="tutorial-number">Tutorial 08</span>
+            <h3>AI Manager</h3>
+            <p>
+              Discover how AI-assisted guidance can support
+              planning, analysis, and management decisions.
+            </p>
+            <a class="video-link"
+               href="https://youtu.be/KjoxUXlUKpk"
+               target="_blank" rel="noopener noreferrer">
+              Watch on YouTube &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
 
       <div class="note">
-        Video tutorials are coming soon.
+        These tutorials are hosted on YouTube and use
+        privacy-enhanced embedded players. YouTube's own
+        privacy practices apply when interacting with its services.
+        If a video does not play here, use its Watch on YouTube link.
+        AI-assisted recommendations should always be reviewed
+        before important decisions.
       </div>
+
+      <p class="video-tagline">
+        ManagerOS &mdash; Plan. Track. Manage.
+      </p>
+
     </section>
 
     <section class="card">
@@ -403,6 +784,3 @@
   </main>
 </body>
 </html>
-
-
-  
